@@ -246,3 +246,15 @@
   });
 
 })()
+
+$("#emailsubmit").click(function () {
+  Email.send({
+      SecureToken: "ba25689c-f0aa-4486-b386-11e87131022b",
+      To: 'mercchang@gmail.com',
+      From: $("#fromEmail").val(),
+      Subject: $("#emailSubject").val(),
+      Body: "<h6>From: " + $("#name").val() + ",</h6>" + "<br />" + $("#emailMsg").val()
+  }).then(
+      $("#sendmessage").addClass("show")
+);
+});
