@@ -249,7 +249,7 @@
 
 $("#emailsubmit").click(function () {
   Email.send({
-      SecureToken: "ba25689c-f0aa-4486-b386-11e87131022b",
+      SecureToken: "056af423-af94-43a9-b990-97a2a8d3b183",
       To: 'mercchang@gmail.com',
       From: $("#fromEmail").val(),
       Subject: $("#emailSubject").val(),
